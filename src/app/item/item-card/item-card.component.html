@@ -1,12 +1,18 @@
-<div class="raw">
-  <div class="shadow-lg p-3 col-sm-4">
-    <div class="card">
-      <img class="itemImg" src="../../../assets/images/computer_default.jpg" />
-      <div class="card-body p-1">
-        <h1>{{ Item.Name }}</h1>
-        <h2>{{ Item.Type }}</h2>
-        <h3>{{ Item.Price }}</h3>
-      </div>
-    </div>
+<div class="card" >
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="../../../assets/images/computer_default.jpg" />
+    <ul class="list-inline text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa-solid fa-address-book"></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-1">
+    <h1>{{ item.Name }}</h1>
+    <h2>{{ item.Type }}</h2>
+    <h3>{{ item.Price }}</h3>
   </div>
 </div>

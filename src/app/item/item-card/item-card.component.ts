@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item-card',
@@ -7,12 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemCardComponent implements OnInit {
 
-  Item :any = {
-    "Id" : 1,
-    "Name" : "CPU",
-    "Type" : "Used",
-    "Price" : 34000
-  }
+  @Input() item : any
 
   constructor() { }
 
